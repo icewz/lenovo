@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c130651c-c76c-449b-ab54-0500566b1444" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/apiNeedToReadCareFully/note" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/apiNeedToReadCareFully/note" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apiNeedToReadCareFully/note1" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +88,7 @@
       <workItem from="1585240234258" duration="72000" />
       <workItem from="1586359327410" duration="779000" />
       <workItem from="1586446492385" duration="657000" />
-      <workItem from="1586958188016" duration="1144000" />
+      <workItem from="1586958188016" duration="1538000" />
     </task>
     <servers />
   </component>
