@@ -10,7 +10,7 @@ public class test {
     public static void main(String[] args) throws IOException {
         //method1();
         GuessStatisticsMessage gsm = new GuessStatisticsMessage();
-        String me = gsm.make('b',4);
+        String me = gsm.make('b', 4);
         System.out.println(me);
     }
 
@@ -41,5 +41,35 @@ public class test {
         for (int i = 0; i < source.length; i++) {
             destination[i] = source[i];
         }
+    }
+
+    // 可变参数
+    public String format(String format, Object... args) {
+        return format;
+    }
+
+    public String monad(Integer... args) {
+        return "";
+    }
+
+    public String triad(String name, int count, Integer... args) {
+        return "";
+    }
+
+    public static void deletePageAndAllReferences(Page page) {
+            deletePage(page);
+            registry.deleteReferences(page.name);
+            configKeys.deleteKey(page.name.makeKey());
+    }
+
+    public void delete(Page page) {
+        try {
+            deletePageAndAllReferences(page);
+        } catch (Exception e) {
+            logError(e);
+        }
+    }
+    private void logError(Exception e) {
+        logger.log(e.getMessage());
     }
 }
