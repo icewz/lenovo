@@ -1,6 +1,7 @@
 package apiNeedToReadCareFully.IO;
 
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.TestOnly;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -56,20 +57,22 @@ public class test {
         return "";
     }
 
-    public static void deletePageAndAllReferences(Page page) {
-            deletePage(page);
-            registry.deleteReferences(page.name);
-            configKeys.deleteKey(page.name.makeKey());
-    }
+//    public static void deletePageAndAllReferences(Page page) {
+//            deletePage(page);
+//            registry.deleteReferences(page.name);
+//            configKeys.deleteKey(page.name.makeKey());
+//    }
+//
+//    public void delete(Page page) {
+//        try {
+//            deletePageAndAllReferences(page);
+//        } catch (Exception e) {
+//            logError(e);
+//        }
+//    }
+//    private void logError(Exception e) {
+//        logger.log(e.getMessage());
+//    }
 
-    public void delete(Page page) {
-        try {
-            deletePageAndAllReferences(page);
-        } catch (Exception e) {
-            logError(e);
-        }
-    }
-    private void logError(Exception e) {
-        logger.log(e.getMessage());
-    }
+
 }
